@@ -21,10 +21,10 @@
     
     <entry>
       <title></title>
-      <link href="/js/snow.js"/>
-      <url>/js/snow.js</url>
+      <link href="/css/custom.css"/>
+      <url>/css/custom.css</url>
       
-        <content type="html"><![CDATA[(function($){    $.fn.snow = function(options){    var $flake = $('<div id="snowbox" />').css({'position': 'absolute','z-index':'9999', 'top': '-50px'}).html('&#10052;'),    documentHeight  = $(document).height(),    documentWidth   = $(document).width(),    defaults = {        minSize     : 10,        maxSize     : 20,        newOn       : 1000,        flakeColor  : "#AFDAEF" /* 此处可以定义雪花颜色，若要白色可以改为#FFFFFF */    },    options = $.extend({}, defaults, options);    var interval= setInterval( function(){    var startPositionLeft = Math.random() * documentWidth - 100,    startOpacity = 0.5 + Math.random(),    sizeFlake = options.minSize + Math.random() * options.maxSize,    endPositionTop = documentHeight - 200,    endPositionLeft = startPositionLeft - 500 + Math.random() * 500,    durationFall = documentHeight * 10 + Math.random() * 5000;    $flake.clone().appendTo('body').css({        left: startPositionLeft,        opacity: startOpacity,        'font-size': sizeFlake,        color: options.flakeColor    }).animate({        top: endPositionTop,        left: endPositionLeft,        opacity: 0.2    },durationFall,'linear',function(){        $(this).remove()    });    }, options.newOn);    };})(jQuery);$(function(){    $.fn.snow({         minSize: 5, /* 定义雪花最小尺寸 */        maxSize: 50,/* 定义雪花最大尺寸 */        newOn: 300  /* 定义密集程度，数字越小越密集 */    });});]]></content>
+        <content type="html"><![CDATA[/* 滚动条 */::-webkit-scrollbar{    width: 10px;    height: 10px;}::-webkit-scrollbar-thumb{    background-color: #49b1f5;    border-radius: 2em;}::-webkit-scrollbar-corner{    background-color: transparent;}::-moz-selection{    color: #fff;    background-color: #49b1f5;}/* 代码框主题 */#article-container figure.highlight{    border-radius: 10px;}/* 背景渐变 */#web_bg{    /*紫粉渐变*/    /*background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);*/    /*粉白蓝*/    background-image: linear-gradient(-225deg, #dfbacd 0%, #B8DCFF 48%, #58abf3 100%);}]]></content>
       
     </entry>
     
@@ -32,10 +32,10 @@
     
     <entry>
       <title></title>
-      <link href="/css/custom.css"/>
-      <url>/css/custom.css</url>
+      <link href="/js/snow.js"/>
+      <url>/js/snow.js</url>
       
-        <content type="html"><![CDATA[/* 滚动条 */::-webkit-scrollbar{    width: 10px;    height: 10px;}::-webkit-scrollbar-thumb{    background-color: #49b1f5;    border-radius: 2em;}::-webkit-scrollbar-corner{    background-color: transparent;}::-moz-selection{    color: #fff;    background-color: #49b1f5;}/* 代码框主题 */#article-container figure.highlight{    border-radius: 10px;}/* 背景渐变 */#web_bg{    /*紫粉渐变*/    /*background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);*/    /*粉白蓝*/    background-image: linear-gradient(-225deg, #dfbacd 0%, #B8DCFF 48%, #58abf3 100%);}]]></content>
+        <content type="html"><![CDATA[(function($){    $.fn.snow = function(options){    var $flake = $('<div id="snowbox" />').css({'position': 'absolute','z-index':'9999', 'top': '-50px'}).html('&#10052;'),    documentHeight  = $(document).height(),    documentWidth   = $(document).width(),    defaults = {        minSize     : 10,        maxSize     : 20,        newOn       : 1000,        flakeColor  : "#AFDAEF" /* 此处可以定义雪花颜色，若要白色可以改为#FFFFFF */    },    options = $.extend({}, defaults, options);    var interval= setInterval( function(){    var startPositionLeft = Math.random() * documentWidth - 100,    startOpacity = 0.5 + Math.random(),    sizeFlake = options.minSize + Math.random() * options.maxSize,    endPositionTop = documentHeight - 200,    endPositionLeft = startPositionLeft - 500 + Math.random() * 500,    durationFall = documentHeight * 10 + Math.random() * 5000;    $flake.clone().appendTo('body').css({        left: startPositionLeft,        opacity: startOpacity,        'font-size': sizeFlake,        color: options.flakeColor    }).animate({        top: endPositionTop,        left: endPositionLeft,        opacity: 0.2    },durationFall,'linear',function(){        $(this).remove()    });    }, options.newOn);    };})(jQuery);$(function(){    $.fn.snow({         minSize: 5, /* 定义雪花最小尺寸 */        maxSize: 50,/* 定义雪花最大尺寸 */        newOn: 300  /* 定义密集程度，数字越小越密集 */    });});]]></content>
       
     </entry>
     

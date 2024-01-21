@@ -4,12 +4,56 @@
   
     
     <entry>
-      <title>Hello World</title>
+      <title>Kafka | 1</title>
       <link href="/posts/4a17b156.html"/>
       <url>/posts/4a17b156.html</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p><a href="https://img1.imgtp.com/2024/01/20/iJ5eYrGh.jpg">https://img1.imgtp.com/2024/01/20/iJ5eYrGh.jpg</a></p>]]></content>
       
+      
+      <categories>
+          
+          <category> 学习分享 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>BIGO</title>
+      <link href="/posts/4a17b156.html"/>
+      <url>/posts/4a17b156.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p><a href="https://img1.imgtp.com/2024/01/20/iJ5eYrGh.jpg">https://img1.imgtp.com/2024/01/20/iJ5eYrGh.jpg</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 实习记录 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>《大型网站技术架构》| 读书笔记 | 1</title>
+      <link href="/posts/4a17b156.html"/>
+      <url>/posts/4a17b156.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p><a href="https://img1.imgtp.com/2024/01/20/iJ5eYrGh.jpg">https://img1.imgtp.com/2024/01/20/iJ5eYrGh.jpg</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 读书笔记 </category>
+          
+      </categories>
       
       
     </entry>
@@ -20,11 +64,33 @@
     
     
     <entry>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title></title>
       <link href="/css/custom.css"/>
       <url>/css/custom.css</url>
       
-        <content type="html"><![CDATA[/* 滚动条 */::-webkit-scrollbar{    width: 10px;    height: 10px;}::-webkit-scrollbar-thumb{    background-color: #49b1f5;    border-radius: 2em;}::-webkit-scrollbar-corner{    background-color: transparent;}::-moz-selection{    color: #fff;    background-color: #49b1f5;}/* 代码框主题 */#article-container figure.highlight{    border-radius: 10px;}/* 背景渐变 */#web_bg{    /*紫粉渐变*/    /*background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);*/    /*粉白蓝*/    background-image: linear-gradient(-225deg, #dfbacd 0%, #B8DCFF 48%, #58abf3 100%);}]]></content>
+        <content type="html"><![CDATA[/* 滚动条 */::-webkit-scrollbar{    width: 10px;    height: 10px;}::-webkit-scrollbar-thumb{    background-color: #49b1f5;    border-radius: 2em;}::-webkit-scrollbar-corner{    background-color: transparent;}::-moz-selection{    color: #fff;    background-color: #49b1f5;}/* 代码框主题 */#article-container figure.highlight{    border-radius: 10px;}/* 背景渐变 */#web_bg{    /*紫粉渐变*/    /*background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);*/    /*粉白蓝*/    background-image: linear-gradient(-225deg, #dfbacd 0%, #B8DCFF 48%, #58abf3 100%);}/* 归档样式 */span.card-archive-list-count {    width: auto;    text-align: left;    font-size: 1.5rem;    line-height: 0.9;    font-weight: 700;  }  .card-archive-list-count-group {    display: flex;    flex-direction: row;    align-items: baseline;  }  #aside-content .card-archives ul.card-archive-list > .card-archive-list-item a span:last-child,  #aside-content .card-categories ul.card-category-list > .card-category-list-item a span:last-child {    width: fit-content;    margin-left: 4px;  }  span.card-archive-list-count {    width: auto;    text-align: left;    font-size: 1.1rem;    line-height: 0.9;    font-weight: 700;  }  .card-archive-list-date {    font-size: 14px;    opacity: 0.6;  }  li.card-archive-list-item {    width: 100%;    flex: 0 0 48%;  }  #aside-content .card-archives ul.card-archive-list > .card-archive-list-item a:hover,  #aside-content .card-categories ul.card-category-list > .card-category-list-item a:hover {    color: var(--anzhiyu-white);    background-color: var(--anzhiyu-theme);    box-shadow: var(--anzhiyu-shadow-theme);    border-radius: 8px;    padding-left: 0.5rem;    padding-right: 0.5rem;  }  @media screen and (min-width: 1300px) {    #aside-content .card-archives ul.card-archive-list > .card-archive-list-item a:hover,    #aside-content .card-categories ul.card-category-list > .card-category-list-item a:hover {      transform: scale(1.03);    }    #aside-content .card-archives ul.card-archive-list > .card-archive-list-item a:active,    #aside-content .card-categories ul.card-category-list > .card-category-list-item a:active {      transform: scale(0.97);    }  }  #aside-content .card-archives ul.card-archive-list > .card-archive-list-item a,  #aside-content .card-categories ul.card-category-list > .card-category-list-item a {    border-radius: 8px;    margin: 4px 0;    display: flex;    flex-direction: column;    align-content: space-between;    border: var(--style-border);  }  #aside-content .card-archives ul.card-archive-list > .card-archive-list-item a span:first-child,  #aside-content .card-categories ul.card-category-list > .card-category-list-item a span:first-child {    width: auto;    flex: inherit;  }  #aside-content .card-archives ul.card-archive-list,  #aside-content .card-categories ul.card-category-list {    display: flex;    flex-direction: row;    justify-content: space-between;    flex-wrap: wrap;  }]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/weixin.css"/>
+      <url>/css/weixin.css</url>
+      
+        <content type="html"><![CDATA[@font-face {  font-family: "iconfont"; /* Project id 4418364 */  src: url('//at.alicdn.com/t/c/font_4418364_484pue5wq4u.woff2?t=1705811512509') format('woff2'),       url('//at.alicdn.com/t/c/font_4418364_484pue5wq4u.woff?t=1705811512509') format('woff'),       url('//at.alicdn.com/t/c/font_4418364_484pue5wq4u.ttf?t=1705811512509') format('truetype');}.iconfont {  font-family: "iconfont" !important;  font-size: 16px;  font-style: normal;  -webkit-font-smoothing: antialiased;  -moz-osx-font-smoothing: grayscale;}.icon-BILIBILI:before {  content: "\e607";  font-size: 22px;  color: red;}.icon-qq:before {  content: "\e66a";  font-size: 22px;  color: rgb(16,164,255);}.icon-weixin:before {  content: "\e637";  font-size: 22px;  color: #00bf03}]]></content>
       
     </entry>
     

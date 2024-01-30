@@ -1,13 +1,13 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>《大型网站技术架构》| 读书笔记 | 【1】演化发展 | 小黄的记录`Blog</title><meta name="author" content="小黄"><meta name="copyright" content="小黄"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="书名:   《大型网站技术架构：核心原理与案例分析》">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>《大型网站技术架构》| 读书笔记 | 【1】演化发展 | 小黄的记录`Blog</title><meta name="author" content="小黄"><meta name="copyright" content="小黄"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="书名:   《大型网站技术架构：核心原理与案例分析》  大型网站软件系统的特点 高并发、大流量  指标：PV、UV、IP、交易额、在线用户数   高可用  系统不间断服务   海量数据  存储、管理海量数据   用户分布广泛、网络情况复杂  系统为全球用户服务，因网络等原因，系统需全球化部署，即海外多地建立机器集群   需求快速变更、发布频繁  渐进式发展   ​	大型网站的技术挑战主要来自于庞">
 <meta property="og:type" content="article">
 <meta property="og:title" content="《大型网站技术架构》| 读书笔记 | 【1】演化发展">
 <meta property="og:url" content="http://example.com/posts/4a17b157.html">
 <meta property="og:site_name" content="小黄的记录&#96;Blog">
-<meta property="og:description" content="书名:   《大型网站技术架构：核心原理与案例分析》">
+<meta property="og:description" content="书名:   《大型网站技术架构：核心原理与案例分析》  大型网站软件系统的特点 高并发、大流量  指标：PV、UV、IP、交易额、在线用户数   高可用  系统不间断服务   海量数据  存储、管理海量数据   用户分布广泛、网络情况复杂  系统为全球用户服务，因网络等原因，系统需全球化部署，即海外多地建立机器集群   需求快速变更、发布频繁  渐进式发展   ​	大型网站的技术挑战主要来自于庞">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/xiao-hwg/imgRepo//img/banner.jpg">
 <meta property="article:published_time" content="2023-12-30T00:00:00.000Z">
-<meta property="article:modified_time" content="2024-01-30T05:25:31.248Z">
+<meta property="article:modified_time" content="2024-01-30T06:57:06.506Z">
 <meta property="article:author" content="小黄">
 <meta property="article:tag" content="小黄,天道酬勤,博客,黄，读书笔记">
 <meta name="twitter:card" content="summary">
@@ -56,7 +56,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2024-01-30 13:25:31'
+  postUpdate: '2024-01-30 14:57:06'
 }</script><script>(win=>{
       win.saveToLocal = {
         set: (key, value, ttl) => {
@@ -154,9 +154,9 @@
       }
       detectApple()
     })(window)</script><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/weixin.css" media="defer" onload="this.media='all'"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='screen'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="小黄的记录`Blog" type="application/atom+xml">
-</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://cdn.jsdelivr.net/gh/xiao-hwg/imgRepo//img/%E5%9B%BE%E6%A0%87%E7%8C%AB.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 档案</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/xiao-hwg/imgRepo//img/banner.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="小黄的记录`Blog"><span class="site-name">小黄的记录`Blog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 档案</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">《大型网站技术架构》| 读书笔记 | 【1】演化发展</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="fa-fw post-meta-icon far fa-calendar-alt"></i><span class="post-meta-label">发表于</span><time datetime="2023-12-30T00:00:00.000Z" title="发表于 2023-12-30 08:00:00">2023-12-30</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="《大型网站技术架构》| 读书笔记 | 【1】演化发展"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>书名:   《大型网站技术架构：核心原理与案例分析》</p>
-<span id="more"></span>
-
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://cdn.jsdelivr.net/gh/xiao-hwg/imgRepo//img/%E5%9B%BE%E6%A0%87%E7%8C%AB.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 档案</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/xiao-hwg/imgRepo//img/banner.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="小黄的记录`Blog"><span class="site-name">小黄的记录`Blog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 档案</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">《大型网站技术架构》| 读书笔记 | 【1】演化发展</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="fa-fw post-meta-icon far fa-calendar-alt"></i><span class="post-meta-label">发表于</span><time datetime="2023-12-30T00:00:00.000Z" title="发表于 2023-12-30 08:00:00">2023-12-30</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="《大型网站技术架构》| 读书笔记 | 【1】演化发展"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><blockquote>
+<p>书名:   《大型网站技术架构：核心原理与案例分析》</p>
+</blockquote>
 <h3 id="大型网站软件系统的特点"><a href="#大型网站软件系统的特点" class="headerlink" title="大型网站软件系统的特点"></a>大型网站软件系统的特点</h3><ul>
 <li><p><strong>高并发、大流量</strong></p>
 <ul>
@@ -184,11 +184,11 @@
 </li>
 </ul>
 <p>​	<strong>大型网站的技术挑战主要来自于庞大的用户，高并发的访问和海量的数据，任何简单的业务一旦需要处理数以P计的数据和面向数以亿计的用户，问题就会变得很棘手。大型网站架构主要就是解决这类问题。</strong></p>
-<h3 id="网站演化发展"><a href="#网站演化发展" class="headerlink" title="网站演化发展"></a>网站演化发展</h3><h4 id="阶段一-初始"><a href="#阶段一-初始" class="headerlink" title="阶段一  初始"></a>阶段一  初始</h4><p><img src="C:\Users\Administrator\Desktop\读书笔记\《大型网站技术架构：核心原理与案例分析》读书笔记.assets\image-20240118195725752.png" alt="image-20240118195725752"></p>
+<h3 id="网站演化发展"><a href="#网站演化发展" class="headerlink" title="网站演化发展"></a>网站演化发展</h3><h4 id="阶段一-初始"><a href="#阶段一-初始" class="headerlink" title="阶段一  初始"></a>阶段一  初始</h4><p><img src="https://cdn.jsdelivr.net/gh/xiao-hwg/imgRepo//img/image-20240118195725752.png"></p>
 <ul>
 <li>应用程序、数据库、文件 通通都在一台服务器上</li>
 </ul>
-<h4 id="阶段二-应用服务和数据服务分离"><a href="#阶段二-应用服务和数据服务分离" class="headerlink" title="阶段二 应用服务和数据服务分离"></a>阶段二 应用服务和数据服务分离</h4><p><img src="C:\Users\Administrator\Desktop\读书笔记\《大型网站技术架构：核心原理与案例分析》读书笔记.assets\image-20240118195708412.png" alt="image-20240118195708412"></p>
+<h4 id="阶段二-应用服务和数据服务分离"><a href="#阶段二-应用服务和数据服务分离" class="headerlink" title="阶段二 应用服务和数据服务分离"></a>阶段二 应用服务和数据服务分离</h4><p><img src="https://cdn.jsdelivr.net/gh/xiao-hwg/imgRepo//img/image-20240118195708412.png"></p>
 <ul>
 <li><strong>问题：</strong> 用户多导致性能变差，数据多导致存储空间不足</li>
 <li>应用数据和数据服务分离 &#x3D;&gt; 应用服务器、文件服务器、数据库服务器</li>
@@ -200,7 +200,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="阶段三-使用缓存改善性能"><a href="#阶段三-使用缓存改善性能" class="headerlink" title="阶段三 使用缓存改善性能"></a>阶段三 使用缓存改善性能</h4><p><img src="C:\Users\Administrator\Desktop\读书笔记\《大型网站技术架构：核心原理与案例分析》读书笔记.assets\image-20240118200309557.png" alt="image-20240118200309557"></p>
+<h4 id="阶段三-使用缓存改善性能"><a href="#阶段三-使用缓存改善性能" class="headerlink" title="阶段三 使用缓存改善性能"></a>阶段三 使用缓存改善性能</h4><p><img src="https://cdn.jsdelivr.net/gh/xiao-hwg/imgRepo//img/image-20240118200309557.png"></p>
 <ul>
 <li><strong>问题：</strong>用户多，数据库压力太大，导致访问延迟，进而影响整个网站的性能，换句话说：<strong>数据库成为了系统瓶颈</strong></li>
 <li>二八定律：80%的业务访问集中在20%的数据上</li>
@@ -221,16 +221,16 @@
 </ul>
 </li>
 </ul>
-<h4 id="阶段四-使用应用服务器集群改善网站的并发处理能力"><a href="#阶段四-使用应用服务器集群改善网站的并发处理能力" class="headerlink" title="阶段四 使用应用服务器集群改善网站的并发处理能力"></a>阶段四 使用应用服务器集群改善网站的并发处理能力</h4><p><img src="C:\Users\Administrator\Desktop\读书笔记\《大型网站技术架构：核心原理与案例分析》读书笔记.assets\image-20240119101020800.png" alt="image-20240119101020800"></p>
+<h4 id="阶段四-使用应用服务器集群改善网站的并发处理能力"><a href="#阶段四-使用应用服务器集群改善网站的并发处理能力" class="headerlink" title="阶段四 使用应用服务器集群改善网站的并发处理能力"></a>阶段四 使用应用服务器集群改善网站的并发处理能力</h4><p><img src="https://cdn.jsdelivr.net/gh/xiao-hwg/imgRepo//img/image-20240119101020800.png"></p>
 <ul>
 <li><strong>问题</strong>：使用缓存后，数据访问压力得到有效缓解，但是单一应用服务区能够处理的请求连接有限，在网站高峰期，应用服务器成为整个网站的瓶颈。</li>
 <li>通过负载均衡调度服务器，可将来自用户浏览器的访问请求分发到应用服务器集群中的任何一台服务器上，如果有更多的用户，就在集群中加入更多的应用服务器，使应用服务器的负载压力不再成为整个网站的瓶颈。</li>
 </ul>
-<h4 id="阶段五-数据库读写分离"><a href="#阶段五-数据库读写分离" class="headerlink" title="阶段五 数据库读写分离"></a>阶段五 数据库读写分离</h4><p><img src="C:\Users\Administrator\Desktop\读书笔记\《大型网站技术架构：核心原理与案例分析》读书笔记.assets\image-20240119101646523.png" alt="image-20240119101646523"></p>
+<h4 id="阶段五-数据库读写分离"><a href="#阶段五-数据库读写分离" class="headerlink" title="阶段五 数据库读写分离"></a>阶段五 数据库读写分离</h4><p><img src="https://cdn.jsdelivr.net/gh/xiao-hwg/imgRepo//img/image-20240119101646523.png"></p>
 <ul>
 <li>应用服务器在写数据的时候，访问主数据库，主数据库通过主从复制机制，将数据更新同步到从数据库，这样当应用服务器读数据时，就可以通过从数据库获得数据。</li>
 </ul>
-<h4 id="阶段六-使用CDN和反向代理加速网站响应"><a href="#阶段六-使用CDN和反向代理加速网站响应" class="headerlink" title="阶段六 使用CDN和反向代理加速网站响应"></a>阶段六 使用CDN和反向代理加速网站响应</h4><p><img src="C:\Users\Administrator\Desktop\读书笔记\《大型网站技术架构：核心原理与案例分析》读书笔记.assets\image-20240119102905980.png" alt="image-20240119102905980"></p>
+<h4 id="阶段六-使用CDN和反向代理加速网站响应"><a href="#阶段六-使用CDN和反向代理加速网站响应" class="headerlink" title="阶段六 使用CDN和反向代理加速网站响应"></a>阶段六 使用CDN和反向代理加速网站响应</h4><p><img src="https://cdn.jsdelivr.net/gh/xiao-hwg/imgRepo//img/image-20240119102905980.png"></p>
 <ul>
 <li><strong>问题</strong>：全球网络情况复杂，网站访问延迟，用户流失</li>
 <li>CDN (内容分发网络) 的作用<ul>
@@ -250,19 +250,19 @@
 </li>
 <li>目的：都是为了尽早返回数据(缓存)给用户，同时也减轻了后端服务器的负载压力</li>
 </ul>
-<h4 id="阶段七-使用分布式文件系统和分布式数据库系统"><a href="#阶段七-使用分布式文件系统和分布式数据库系统" class="headerlink" title="阶段七 使用分布式文件系统和分布式数据库系统"></a>阶段七 使用分布式文件系统和分布式数据库系统</h4><p><img src="C:\Users\Administrator\Desktop\读书笔记\《大型网站技术架构：核心原理与案例分析》读书笔记.assets\image-20240119104722478.png" alt="image-20240119104722478"></p>
+<h4 id="阶段七-使用分布式文件系统和分布式数据库系统"><a href="#阶段七-使用分布式文件系统和分布式数据库系统" class="headerlink" title="阶段七 使用分布式文件系统和分布式数据库系统"></a>阶段七 使用分布式文件系统和分布式数据库系统</h4><p><img src="https://cdn.jsdelivr.net/gh/xiao-hwg/imgRepo//img/image-20240119104722478.png"></p>
 <ul>
 <li><strong>问题：</strong>一台数据库&#x2F;文件服务器是满足不了持续增长的业务需求的。</li>
 <li>分布式数据库是网站数据库拆分的最后手段，只有在单表数据规模非常庞大的时候才使用。</li>
 <li>网站更常用的数据库拆分手段是业务分库，即将不同业务的数据库部署在不同的物理服务器上。</li>
 </ul>
-<h4 id="阶段八-使用NoSQL和搜索引擎"><a href="#阶段八-使用NoSQL和搜索引擎" class="headerlink" title="阶段八 使用NoSQL和搜索引擎"></a>阶段八 使用NoSQL和搜索引擎</h4><p><img src="C:\Users\Administrator\Desktop\读书笔记\《大型网站技术架构：核心原理与案例分析》读书笔记.assets\image-20240119105539838.png" alt="image-20240119105539838"></p>
+<h4 id="阶段八-使用NoSQL和搜索引擎"><a href="#阶段八-使用NoSQL和搜索引擎" class="headerlink" title="阶段八 使用NoSQL和搜索引擎"></a>阶段八 使用NoSQL和搜索引擎</h4><p><img src="https://cdn.jsdelivr.net/gh/xiao-hwg/imgRepo//img/image-20240119105539838.png"></p>
 <ul>
 <li><strong>问题：</strong>网站的业务越来越复杂，对数据存储和检索的需求也越来越复杂</li>
 <li>网站需要采用一些非关系型数据库技术(Redis、MongoDB)、非数据库查询技术如搜索引擎（ES）</li>
 <li>应用服务器则通过一个统一数据访问模块访问各种数据，减轻应用程序管理诸多数据源的麻烦</li>
 </ul>
-<h4 id="阶段九-业务拆分-分布式服务"><a href="#阶段九-业务拆分-分布式服务" class="headerlink" title="阶段九 业务拆分-分布式服务"></a>阶段九 业务拆分-分布式服务</h4><p><img src="C:\Users\Administrator\Desktop\读书笔记\《大型网站技术架构：核心原理与案例分析》读书笔记.assets\image-20240119110456687.png" alt="image-20240119110456687"></p>
+<h4 id="阶段九-业务拆分-分布式服务"><a href="#阶段九-业务拆分-分布式服务" class="headerlink" title="阶段九 业务拆分-分布式服务"></a>阶段九 业务拆分-分布式服务</h4><p><img src="https://cdn.jsdelivr.net/gh/xiao-hwg/imgRepo//img/image-20240119110456687.png"></p>
 <ul>
 <li>问题：日益复杂的业务场景</li>
 <li>使用分而治之的手段将整个网站业务分成不同的产品线<ul>

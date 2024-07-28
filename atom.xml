@@ -85,18 +85,18 @@
   </entry>
   
   <entry>
-    <title>BIGO</title>
+    <title>Tencent</title>
     <link href="http://example.com/posts/4a17b156.html"/>
     <id>http://example.com/posts/4a17b156.html</id>
     <published>2024-01-21T02:50:37.127Z</published>
-    <updated>2024-01-30T05:07:48.751Z</updated>
+    <updated>2024-07-28T17:27:06.096Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p><a href="https://img1.imgtp.com/2024/01/20/iJ5eYrGh.jpg">https://img1.imgtp.com/2024/01/20/iJ5eYrGh.jpg</a></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="Owner模板规范"><a href="#Owner模板规范" class="headerlink" title="Owner模板规范"></a>Owner模板规范</h2>]]></content>
     
     
       
       
-    <summary type="html">&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#</summary>
+    <summary type="html">&lt;h2 id=&quot;Owner模板规范&quot;&gt;&lt;a href=&quot;#Owner模板规范&quot; class=&quot;headerlink&quot; title=&quot;Owner模板规范&quot;&gt;&lt;/a&gt;Owner模板规范&lt;/h2&gt;</summary>
       
     
     

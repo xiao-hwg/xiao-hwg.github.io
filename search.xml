@@ -61,11 +61,11 @@
     
     
     <entry>
-      <title>BIGO</title>
+      <title>Tencent</title>
       <link href="/posts/4a17b156.html"/>
       <url>/posts/4a17b156.html</url>
       
-        <content type="html"><![CDATA[<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p><a href="https://img1.imgtp.com/2024/01/20/iJ5eYrGh.jpg">https://img1.imgtp.com/2024/01/20/iJ5eYrGh.jpg</a></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="Owner模板规范"><a href="#Owner模板规范" class="headerlink" title="Owner模板规范"></a>Owner模板规范</h2>]]></content>
       
       
       <categories>
@@ -121,22 +121,22 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title></title>
+      <link href="/js/snow.js"/>
+      <url>/js/snow.js</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[(function($){    $.fn.snow = function(options){    var $flake = $('<div id="snowbox" />').css({'position': 'absolute','z-index':'9999', 'top': '-50px'}).html('&#10052;'),    documentHeight  = $(document).height(),    documentWidth   = $(document).width(),    defaults = {        minSize     : 10,        maxSize     : 20,        newOn       : 1000,        flakeColor  : "#AFDAEF" /* 此处可以定义雪花颜色，若要白色可以改为#FFFFFF */    },    options = $.extend({}, defaults, options);    var interval= setInterval( function(){    var startPositionLeft = Math.random() * documentWidth - 100,    startOpacity = 0.5 + Math.random(),    sizeFlake = options.minSize + Math.random() * options.maxSize,    endPositionTop = documentHeight - 200,    endPositionLeft = startPositionLeft - 500 + Math.random() * 500,    durationFall = documentHeight * 10 + Math.random() * 5000;    $flake.clone().appendTo('body').css({        left: startPositionLeft,        opacity: startOpacity,        'font-size': sizeFlake,        color: options.flakeColor    }).animate({        top: endPositionTop,        left: endPositionLeft,        opacity: 0.2    },durationFall,'linear',function(){        $(this).remove()    });    }, options.newOn);    };})(jQuery);$(function(){    $.fn.snow({         minSize: 5, /* 定义雪花最小尺寸 */        maxSize: 50,/* 定义雪花最大尺寸 */        newOn: 300  /* 定义密集程度，数字越小越密集 */    });});]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title></title>
-      <link href="/js/snow.js"/>
-      <url>/js/snow.js</url>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
-        <content type="html"><![CDATA[(function($){    $.fn.snow = function(options){    var $flake = $('<div id="snowbox" />').css({'position': 'absolute','z-index':'9999', 'top': '-50px'}).html('&#10052;'),    documentHeight  = $(document).height(),    documentWidth   = $(document).width(),    defaults = {        minSize     : 10,        maxSize     : 20,        newOn       : 1000,        flakeColor  : "#AFDAEF" /* 此处可以定义雪花颜色，若要白色可以改为#FFFFFF */    },    options = $.extend({}, defaults, options);    var interval= setInterval( function(){    var startPositionLeft = Math.random() * documentWidth - 100,    startOpacity = 0.5 + Math.random(),    sizeFlake = options.minSize + Math.random() * options.maxSize,    endPositionTop = documentHeight - 200,    endPositionLeft = startPositionLeft - 500 + Math.random() * 500,    durationFall = documentHeight * 10 + Math.random() * 5000;    $flake.clone().appendTo('body').css({        left: startPositionLeft,        opacity: startOpacity,        'font-size': sizeFlake,        color: options.flakeColor    }).animate({        top: endPositionTop,        left: endPositionLeft,        opacity: 0.2    },durationFall,'linear',function(){        $(this).remove()    });    }, options.newOn);    };})(jQuery);$(function(){    $.fn.snow({         minSize: 5, /* 定义雪花最小尺寸 */        maxSize: 50,/* 定义雪花最大尺寸 */        newOn: 300  /* 定义密集程度，数字越小越密集 */    });});]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
